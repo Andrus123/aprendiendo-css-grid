@@ -15,13 +15,12 @@ body{
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 150px 70px 1fr 70px;
     grid-template-areas: 
-           "lateral cabecera cabecera cabecera cabecera"
-           "lateral menu menu menu menu"
+           "cabecera cabecera cabecera cabecera cabecera"
+           "menu menu menu menu menu"
            "lateral contenido contenido contenido contenido"
-           "lateral pie pie pie pie";
-    
+           "pie pie pie pie pie";
            /*Grid areas es genial para el Responsive, da un control absoluto a cada caja del grid*/       
-
+    grid-row-gap: 20px;
     width: 75%;
     height: 1000px;
     margin: 0px auto;
@@ -70,6 +69,7 @@ body{
 }
 
 #website-areas #lateral{
+    padding: 20px;
     grid-area: lateral;    
     background: orange;
     color: white;
