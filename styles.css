@@ -5,11 +5,13 @@ body{
 
 .layout{
     width: 1200px;
+    height: 400px;
     margin: 0px auto;
 
     /*Definir el grid Layout*/
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr) 3fr;
 
 
     /*Espacio entre elementos grid*/
@@ -39,4 +41,10 @@ body{
 }
 .layout .pink{
     background: pink;
+}
+.layout .orange{
+    background: orange;
+}
+.layout .lightblue{
+    background: lightblue;
 }
