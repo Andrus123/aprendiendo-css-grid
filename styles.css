@@ -21,11 +21,13 @@ body{
 }
 
 #cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1 / 6;
     background: navy;
     color: white;
 }
-
 #menu{
 
     grid-column: 1 / 6;
