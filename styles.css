@@ -21,6 +21,9 @@ body{
 }
 
 #cabecera{
+    /*Para centrar el contenido de una caja que tenga un display grid, tenemos que
+    añadir al elemento un display flex para manipular el contenido, justify content center para
+    centrar el contenido horizontalmente , y align items center para centrarlo verticalmente*/
     display: flex;
     justify-content: center;
     align-items: center;
