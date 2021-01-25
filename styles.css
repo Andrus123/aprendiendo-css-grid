@@ -5,13 +5,13 @@ body{
 
 .layout{
     width: 1200px;
-    height: 400px;
+    min-height: 600px;
     margin: 0px auto;
 
     /*Definir el grid Layout*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr) 3fr;
+    grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
 
 
     /*Espacio entre elementos grid*/
@@ -40,18 +40,23 @@ body{
     background: navy;
 }
 .layout .green{
+
+    grid-row-start: 2;
+    grid-row-end: 6;
     background: green;
 }
 .layout .pink{
-    grid-column: 1 / 3;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
     background: pink;
 }
 .layout .orange{
+    grid-row: 3 / 5;
     background: orange;
 }
 .layout .lightblue{
     background: lightblue;
     /*grid-column-start: 1;
     grid-column-end: 3;*/
-    grid-column: 1 / 4 ;
+    grid-column: 2 / 4 ;
 }
